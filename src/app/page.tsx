@@ -9,6 +9,7 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { CursorGlow } from "@/components/CursorGlow";
+import { DigitalTwin } from "@/components/DigitalTwin";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <DigitalTwin />
     </>
   );
 }
