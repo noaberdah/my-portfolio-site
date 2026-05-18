@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Noa Lapidot — Portfolio
 
-## Getting Started
+A professional, single-page portfolio site for **Noa Lapidot** — Software Engineer.
+Built with **Next.js 16 (App Router)**, **TypeScript**, **Tailwind CSS v4**, **Framer Motion**, and **Lucide icons**.
 
-First, run the development server:
+The design aesthetic blends **enterprise** (clean grids, strong typography, generous whitespace) with **edgy** detail work (electric-lime + violet accents, monospaced metadata, scramble & marquee motion, cursor-aware ambient glow).
+
+## Sections
+
+- **Hero** — name, scrambled role, location/time, metrics strip
+- **Marquee** — flowing skill ticker
+- **About** — long-form summary + 4 capability pillars + language strip
+- **Career Journey** — alternating timeline with periods, tags and bullet highlights
+- **Skills** — 4 grouped chip clusters (Languages, Frameworks, Tools, Methodologies)
+- **Projects** — selected work cards (with "Portfolio coming soon" slots)
+- **Contact** — large email CTA + contact card with copy-to-clipboard
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Content
 
-To learn more about Next.js, take a look at the following resources:
+All copy (bio, skills, timeline, projects, contact) lives in **`src/lib/content.ts`** — edit that file to update the site.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Design tokens
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Theme variables (colors, fonts, spacing helpers) are defined in `src/app/globals.css` under `:root` and exposed to Tailwind v4 via `@theme inline`.
