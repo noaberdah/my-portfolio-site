@@ -8,7 +8,7 @@ export const profile = {
   email: "noaberdah@gmail.com",
   phone: "+972 54-539-1286",
   linkedin: "https://www.linkedin.com/in/noa-lapidot",
-  github: "https://github.com/",
+  github: "https://github.com/noaberdah",
   available: true,
   summary: [
     "Software Engineer with a B.Sc. in Computer Science, specializing in Python and C++ backend development and scalable systems.",
